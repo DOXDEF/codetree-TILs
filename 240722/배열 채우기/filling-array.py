@@ -1,6 +1,9 @@
 arr = list(map(int, input().split()))
-for i in range(len(arr) - 1, -1, -1):
-    if arr[i] == 0:
-        pass
+answer = []
+for i in arr:
+    if i == 0:
+        break
     else:
-        print(arr[i], end = " ")
+        answer.append(i)
+for i in range(len(answer) - 1, -1, -1):
+    print(answer[i], end = " ")

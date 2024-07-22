@@ -11,7 +11,7 @@ for _ in range(q):
                 print(i + 1)
                 cnt = 1
                 break
-        if cnt = 0:
+        if cnt == 0:
             print(0)
         cnt = 0
     else:

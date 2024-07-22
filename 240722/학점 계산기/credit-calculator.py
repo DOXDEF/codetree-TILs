@@ -7,4 +7,4 @@ if eva >= 4.0:
 elif eva >= 3.0:
     print("Good")
 else:
-    print("Pood")
+    print("Poor")

@@ -1,10 +1,8 @@
 n = int(input())
 arr = list(map(int, input().split()))
-cnt = 0
+arr = sorted(arr, reverse = True)
+max_arr = -1
 for i in arr:
-    if i == max(arr):
-        cnt += 1
-if cnt == 1:
-    print(max(arr))
-else:
-    print(-1)
+    if arr.count(i) == 1 and i >= max_arr:
+        max_arr = i
+print(max_arr)

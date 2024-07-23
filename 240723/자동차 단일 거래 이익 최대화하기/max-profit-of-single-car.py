@@ -1,16 +1,11 @@
 n = int(input())
 arr = list(map(int, input().split()))
 answer = 0
-while True:
-    if len(arr) == 1 and answer == 0:
-        print(0)
-        break
-    if len(arr[arr.index(min(arr)):]) == 1:
-        arr = arr[:arr.index(min(arr))]
-    else:
-        arr = arr[arr.index(min(arr)):]
-        for i in arr:
-            if i - min(arr) >= answer:
-                answer = i - min(arr)
-        print(answer)
-        break
+buy = arr[0]
+for i in range(n):
+    if arr[i] <= buy:
+            buy = arr[i]
+    for j in range(i + 1, n):
+        if arr[j] > buy and answer < arr[j] - buy:
+            answer = arr[j] - buy
+print(answer)

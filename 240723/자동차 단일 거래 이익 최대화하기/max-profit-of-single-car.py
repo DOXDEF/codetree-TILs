@@ -2,6 +2,9 @@ n = int(input())
 arr = list(map(int, input().split()))
 answer = 0
 while True:
+    if len(arr) == 1 and answer == 0:
+        print(0)
+        break
     if len(arr[arr.index(min(arr)):]) == 1:
         arr = arr[:arr.index(min(arr))]
     else:

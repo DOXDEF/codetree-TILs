@@ -2,14 +2,11 @@ n = int(input())
 arr = list(map(str, input().split()))
 cnt = 0
 num = 0
-line = ''
 for i in arr:
     for j in range(len(i)):
-        line += i[j]
+        print(i[j], end = "")
         cnt += 1
         if cnt == 5:
-            print(line)
-            line = ''
+            print()
             num += 1
             cnt = 0
-print(num)

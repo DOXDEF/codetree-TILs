@@ -1,0 +1,5 @@
+a = input()
+b = input()
+x = a.replace(" ", "")
+y = b.replace(" ", "")
+print(f"{x}{y}")

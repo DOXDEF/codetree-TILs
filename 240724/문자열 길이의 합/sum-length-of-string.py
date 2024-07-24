@@ -7,5 +7,6 @@ sum_len = 0
 cnt = 0
 for i in arr:
     sum_len += len(i)
-    cnt += i.count('a')
+    if i[0] == 'a':
+        cnt += 1
 print(sum_len, cnt)

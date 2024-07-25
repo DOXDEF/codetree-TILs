@@ -6,7 +6,7 @@ for i in arr:
         if j >= '0' and j <= '9':
             num += j
         else:
-            sum_num += int(num)
-            num = ''
             break
+    sum_num += int(num)
+    num = ''
 print(sum_num)

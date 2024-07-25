@@ -12,4 +12,6 @@ while True:
             pass
     if len(x) <= len(y) and x != y:
         break
+    if cnt == 0:
+        break
 print(x)

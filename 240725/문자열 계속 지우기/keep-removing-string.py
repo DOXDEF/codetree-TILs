@@ -10,8 +10,10 @@ while True:
             break
         else:
             pass
+'''
     if len(x) <= len(y) and x != y:
         break
+'''
     if y not in x:
         break
 print(x)

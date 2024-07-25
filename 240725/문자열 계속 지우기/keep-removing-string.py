@@ -10,7 +10,6 @@ while True:
             break
         else:
             pass
-    if len(x) <= len(y):
+    if len(x) <= len(y) and x != y:
         break
-if cnt != 0:
-    print(x)
+print(x)

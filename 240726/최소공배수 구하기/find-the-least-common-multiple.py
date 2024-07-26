@@ -1,14 +1,13 @@
 def compare(x, y):
-    num = 2
+    a = x
+    b = y
     if x > y:
         while x % y != 0:
-            x *= num
-            num += 1
+            x += a
         print(x)
     else:
         while y % x != 0:
-            y *= num
-            num += 1
+            y += b
         print(y)
 n, m = map(int, input().split())
 compare(n, m)

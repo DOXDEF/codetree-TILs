@@ -5,7 +5,7 @@ def is_true(x, y):
     if x == 2:
         if y <= 28:
             return True
-    if x == 2 or x == 4 or x == 6 or x == 9 or x == 11:
+    if x == 4 or x == 6 or x == 9 or x == 11:
         if y <= 30:
             return True
     return False

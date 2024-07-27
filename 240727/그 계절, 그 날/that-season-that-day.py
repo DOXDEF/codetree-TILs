@@ -1,5 +1,5 @@
 def seasons(y, m, d):
-    if y % 4 == 0 or (y % 4 == 0 and y % 100 == 0 and y % 400 == 0):
+    if (y % 4 == 0 and y % 100 != 0) or (y % 4 == 0 and y % 100 == 0 and y % 400 == 0):
         if m == 2:
             if d <= 29:
                 return "Winter"

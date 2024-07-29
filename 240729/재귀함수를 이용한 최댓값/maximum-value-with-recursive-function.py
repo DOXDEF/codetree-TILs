@@ -1,7 +1,7 @@
 num_max = 0
 def maxi(n, arr):
     global num_max
-    if n == 1:
+    if n == 0:
         return num_max + arr[0]
     maxi(n - 1, arr)
     if num_max < arr[n - 1]:

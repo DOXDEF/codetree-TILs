@@ -1,10 +1,10 @@
 m1, d1, m2, d2 = map(int, input().split())
 arr = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 sum1, sum2 = 0, 0
-for i in range(m1):
+for i in range(m1 - 1):
     sum1 += arr[i]
 sum1 += d1
-for i in range(m2):
+for i in range(m2 - 1):
     sum2 += arr[i]
 sum2 += d2
-print(1 if sum2 == sum1 else sum2 - sum1)
+print(sum2 - sum1 + 1)

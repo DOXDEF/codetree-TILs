@@ -7,4 +7,4 @@ sum1 += d1
 for i in range(m2):
     sum2 += arr[i]
 sum2 += d2
-print(sum2 - sum1)
+print(1 if sum2 == sum1 else sum2 - sum1)

@@ -7,7 +7,6 @@ sum2 = sum(arr1[:m2 - 1]) + d2
 
 cnt_day = 0
 for i in range(sum2 - sum1 + 1):
-    print(arr2[i % 7] == day)
     if arr2[i % 7] == day:
         cnt_day += 1
 print(cnt_day)

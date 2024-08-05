@@ -5,19 +5,19 @@ n = int(input())
 for _ in range(n):
     a, b = map(str, input().split())
     if b == 'R':
-        for i in range(int(a)):
-            arr[point] = 1
-            arr_cnt[point] += 1
-            if arr_cnt[point] >= 4:
-                arr[point] = 0
-            point += 1
+        for i in range(point, point + int(a)):
+            arr[i] = 1
+            arr_cnt[i] += 1
+            if arr_cnt[i] >= 4:
+                arr[i] = 0
+        point += (int(a) - 1)
     else:
-        for i in range(int(a)):
-            point -= 1
-            arr[point] = -1
-            arr_cnt[point] += 1
-            if arr_cnt[point] >= 4:
-                arr[point] = 0
+        for i in range(point, point - int(a), -1):
+            arr[i] = -1
+            arr_cnt[i] += 1
+            if arr_cnt[i] >= 4:
+                arr[i] = 0
+        point -= (int(a) - 1)
 gray = 0
 arr_cnt.sort(reverse = True)
 for i in range(len(arr_cnt)):

@@ -16,16 +16,13 @@ for i in range(a1 + 1000, a2 + 1000):
                 pass
             else:
                 arr[i][j] = 0
-max_row = 0
-row = 0
-max_col = 0
+tangle_row = []
+tangle_col = []
 for i in range(2001):
     for j in range(2001):
         if arr[i][j] == 1:
-            row += 1
-    if row != 0:
-        max_col += 1
-    if row > max_row:
-        max_row = row
-    row = 0
-print(max_row * max_col)
+            tangle_col.append(i)
+            tangle_row.append(j)
+tangle_col.sort()
+tangle_row.sort()
+print((tangle_col[len(tangle_col) - 1] - tangle_col[0] + 1) * (tangle_row[len(tangle_row) - 1] - tangle_row[0] + 1))

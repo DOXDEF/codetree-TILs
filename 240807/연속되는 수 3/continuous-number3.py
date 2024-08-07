@@ -21,5 +21,6 @@ for i in range(len(arr)):
             part.append(cnt)
             sign = -1
             cnt = 1
+part.append(cnt)
 part.sort(reverse = True)
 print(part[0])

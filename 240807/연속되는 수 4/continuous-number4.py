@@ -1,7 +1,7 @@
 n = int(input())
 arr = []
 part = []
-cnt = 0
+cnt = 1
 for _ in range(n):
     a = int(input())
     arr.append(a)

@@ -25,4 +25,7 @@ for i in range(2001):
             tangle_row.append(j)
 tangle_col.sort()
 tangle_row.sort()
-print((tangle_col[len(tangle_col) - 1] - tangle_col[0] + 1) * (tangle_row[len(tangle_row) - 1] - tangle_row[0] + 1))
+if len(tangle_col) == 0 and len(tangle_row) == 0:
+    print(0)
+else:
+    print((tangle_col[len(tangle_col) - 1] - tangle_col[0] + 1) * (tangle_row[len(tangle_row) - 1] - tangle_row[0] + 1))

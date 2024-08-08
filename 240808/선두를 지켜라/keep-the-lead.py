@@ -14,7 +14,7 @@ for _ in range(m):
         cnt_b += v
         arr_b.append(cnt_b)
 check_1st = 0
-if arr_a[0] > arr_b[0]:
+if arr_a[0] >= arr_b[0]:
     check_1st = 1
 else:
     check_1st = -1

@@ -17,6 +17,9 @@ dir_num = 0           # 0: 오른쪽, 1: 아래쪽, 2: 왼쪽, 3: 위쪽
 if n == 1:
     for i in range(n, m + 1):
         print(i, end = ' ')
+elif m == 1:
+    for i in range(m, n + 1):
+        print(i)
 else:
     # 처음 시작 위치에 초기값을 적습니다.
     answer[x][y] = 1

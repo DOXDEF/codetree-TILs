@@ -5,6 +5,8 @@ n = int(input())
 cnt = 0
 answer = -1
 for i in range(n):
+    if answer == cnt:
+        break
     d, t = map(str, input().split())
     if d == 'E':
         dir_num = 0

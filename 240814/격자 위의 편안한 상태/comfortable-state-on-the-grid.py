@@ -17,6 +17,6 @@ for _ in range(m):
         nx, ny = x - 1 + dx, y - 1 + dy
         if in_range(nx, ny) and arr_2d[nx][ny] == 1:
             cnt += 1
-    if cnt >= 3:
+    if cnt == 3:
         cnt_one = 1
     print(cnt_one)

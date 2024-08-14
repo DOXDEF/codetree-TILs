@@ -3,7 +3,6 @@ arr_2d = [
     [0 for _ in range(n)]
     for _ in range(n)
 ]
-
 dxs, dys = [0, 1, 0, -1], [1, 0, -1, 0]
 
 def in_range(x, y):
@@ -15,9 +14,9 @@ for _ in range(m):
     cnt = 0
     cnt_one = 0
     for dx, dy in zip(dxs, dys):
-        nx, ny = x + dx, y + dy
+        nx, ny = x - 1 + dx, y - 1 + dy
         if in_range(nx, ny) and arr_2d[nx][ny] == 1:
-            cnt = 1
-    if cnt == 1:
+            cnt += 1
+    if cnt >= 3:
         cnt_one = 1
     print(cnt_one)

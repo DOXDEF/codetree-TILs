@@ -1,6 +1,6 @@
 n = int(input())
 arr = list(map(int, input().split()))
-min_dist = 9999
+min_dist = 9999999
 for i in range(n):
     dist = 0
     for j in range(n):

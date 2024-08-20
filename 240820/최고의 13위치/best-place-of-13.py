@@ -6,5 +6,5 @@ for _ in range(n):
     arr_2d.append(arr)
 for i in range(n):
     for j in range(n - 2):
-        cnt = max(cnt, arr_2d[i][j] + arr_2d[i][j + 1] + arr_2d[i][j + 1])
+        cnt = max(cnt, arr_2d[i][j] + arr_2d[i][j + 1] + arr_2d[i][j + 2])
 print(cnt)
